@@ -1,0 +1,126 @@
+.projects-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #f8fafc;
+}
+
+.projects-page .page-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects-page h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 1.5rem 0;
+}
+
+.projects-page .tagline {
+  color: #666;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.back-home-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.back-home-link:hover {
+  color: #333;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.project-card p {
+  margin: 0 0 1rem 0;
+  color: #666;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-status.active {
+  background-color: #e6f4ea;
+  color: #1e7e34;
+}
+
+.project-status.coming-soon {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.placeholder-message {
+  grid-column: 1 / -1;
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  border-left: 6px solid #f87171;
+}
+
+.placeholder-message h2 {
+  color: #f1f5f9;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.placeholder-message p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 1.5rem;
+  }
+  
+  .projects-page h1 {
+    font-size: 2.2rem;
+  }
+  
+  .placeholder-message {
+    padding: 2rem;
+  }
+  
+  .placeholder-message h2 {
+    font-size: 1.8rem;
+  }
+} 

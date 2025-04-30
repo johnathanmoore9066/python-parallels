@@ -1,0 +1,79 @@
+.code-display-block {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-display-block .editor-container {
+  display: flex;
+  background: #1e293b;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-height: none;
+  flex: 1;
+  height: 100%;
+  min-height: inherit;
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #0f172a;
+}
+
+.code-display-block .editor-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.code-display-block .editor-container::-webkit-scrollbar-track {
+  background: #0f172a;
+  border-radius: 6px;
+}
+
+.code-display-block .editor-container::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 6px;
+}
+
+.code-display-block .editor-container::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.code-display-block .code-block {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  margin: 0;
+  overflow: visible;
+  background: transparent;
+  color: #f8fafc;
+  white-space: pre;
+  tab-size: 2;
+  height: 100%;
+  min-height: inherit;
+  border: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.code-display-block .code-line {
+  min-height: 1.5em;
+  padding: 0.125rem 0;
+}
+
+.code-display-block code {
+  color: #f8fafc;
+  font-family: inherit;
+  white-space: inherit;
+  width: 100%;
+}
+
+/* Comment styling */
+.code-display-block .comment {
+  color: #64748b;
+  font-style: italic;
+} 

@@ -1,0 +1,189 @@
+.exercise-code-editor {
+    margin-bottom: 2rem;
+  }
+  
+  /* PythonCodeEditor styles */
+  .python-code-editor {
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #0a1929;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .editor-container {
+    position: relative;
+    height: 250px;
+    border-bottom: 1px solid #1e3a5f;
+  }
+  
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #071425;
+    color: #e0e0e0;
+    border-bottom: 1px solid #1e3a5f;
+  }
+  
+  .editor-header span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .run-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    outline: none;
+  }
+  
+  .run-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .run-button:disabled {
+    background-color: #375980;
+    color: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  .editor-main {
+    display: flex;
+  }
+  
+  .line-numbers {
+    padding: 1rem 0.5rem;
+    background-color: #1e293b;
+    color: #64748b;
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+  
+  .line-number {
+    padding-right: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .code-textarea {
+    flex: 1;
+    min-height: 250px;
+    padding: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+    background: #0f172a;
+    border: none;
+    resize: vertical;
+  }
+  
+  .code-textarea:focus {
+    outline: none;
+  }
+  
+  /* Style for the AceEditor */
+  .ace_editor {
+    font-family: 'Source Code Pro', monospace !important;
+    line-height: 1.5 !important;
+    background-color: #0c1e36 !important;
+  }
+  
+  .ace_gutter {
+    background-color: #071425 !important;
+    color: #6c8bb9 !important;
+  }
+  
+  /* Make comments more grayed out */
+  .ace_comment {
+    color: #5d7b9e !important;
+    font-style: italic !important;
+    opacity: 0.8 !important;
+  }
+  
+  /* Enhance keyword highlighting */
+  .ace_keyword {
+    color: #88c1f5 !important;
+    font-weight: bold !important;
+  }
+  
+  /* String styling */
+  .ace_string {
+    color: #a5e075 !important;
+  }
+  
+  /* Function calls */
+  .ace_support.ace_function {
+    color: #66d9ef !important;
+  }
+  
+  /* Variables */
+  .ace_variable {
+    color: #e6c07b !important;
+  }
+  
+  /* Output styles */
+  .output-container {
+    background-color: #071425;
+    padding: 0.5rem;
+    border-top: 1px solid #1e3a5f;
+  }
+  
+  .output-header {
+    color: #a6c8ff;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .output {
+    background-color: #0a1929;
+    color: #f0f0f0;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9rem;
+    margin: 0;
+    min-height: 2rem;
+    max-height: 150px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    border: 1px solid #1e3a5f;
+  }
+  
+  /* Scrollbar styling for the output area */
+  .output::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .output::-webkit-scrollbar-track {
+    background: #071425;
+  }
+  
+  .output::-webkit-scrollbar-thumb {
+    background-color: #1e3a5f;
+    border-radius: 4px;
+  }
+  
+  .output::-webkit-scrollbar-thumb:hover {
+    background-color: #2a4a75;
+  }
+
+  .exercise-python-editor {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+    margin-bottom: 1rem;
+  } 

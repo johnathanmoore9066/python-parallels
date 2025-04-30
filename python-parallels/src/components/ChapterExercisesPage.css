@@ -1,0 +1,133 @@
+.chapter-exercises-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.back-link, .home-link {
+  text-decoration: none;
+  color: #94a3b8;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.back-link:hover, .home-link:hover {
+  color: #f1f5f9;
+}
+
+.header h1 {
+  color: #f8fafc;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.exercise-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 1rem;
+}
+
+.exercise-nav-button {
+  background: #1e293b;
+  color: #94a3b8;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.exercise-nav-button:hover {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+.exercise-nav-button.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.exercise-content {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.exercise {
+  display: none;
+}
+
+.exercise.active {
+  display: block;
+}
+
+.exercise-title {
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.exercise-description {
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.exercise-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.pagination-button {
+  background: #334155;
+  color: #f1f5f9;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background: #475569;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-indicator {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #94a3b8;
+  font-size: 1.1rem;
+}

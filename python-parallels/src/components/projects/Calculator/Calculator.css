@@ -1,0 +1,341 @@
+.calculator {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Calculator styles will go here */
+
+.calculator-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #f8fafc;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+/* Main container for calculator and code sections */
+.calculator-container {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Calculator Display Styles */
+.calculator-display {
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  background: #0f172a;
+  color: #f1f5f9;
+  padding: 1rem;
+  text-align: right;
+  font-size: 2rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.buttons button {
+  background: #0f172a;
+  color: #f1f5f9;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+  background: #1e293b;
+}
+
+/* Code Input Area Styles */
+.code-input-area {
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.code-header h2 {
+  color: #f1f5f9;
+  margin: 0;
+}
+
+.code-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hint-button,
+.run-button,
+.reset-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+.hint-button {
+  background: #4f46e5;
+  color: white;
+}
+
+.hint-button:hover {
+  background: #4338ca;
+}
+
+.run-button {
+  background: #3b82f6;
+  color: white;
+}
+
+.run-button:hover {
+  background: #2563eb;
+}
+
+.reset-button {
+  background: #ef4444;
+  color: white;
+}
+
+.reset-button:hover {
+  background: #dc2626;
+}
+
+.hint-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 4px;
+  border-left: 4px solid #4f46e5;
+}
+
+.hint-box p {
+  color: #f1f5f9;
+  margin: 0;
+  font-style: italic;
+}
+
+.code-editor {
+  width: calc(100% - 2rem); /* Subtract the padding from the width */
+  height: 400px;
+  background: #1e293b;
+  color: #f1f5f9;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  resize: none;
+  margin: 0 auto; /* Center the editor */
+}
+
+/* Test Tasks Styles */
+.test-tasks {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.test-tasks h2 {
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+}
+
+.test-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.test-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: #0f172a;
+  border-radius: 4px;
+}
+
+.test-status {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.test-item.completed .test-status {
+  color: #22c55e;
+}
+
+.test-item.incomplete .test-status {
+  color: #ef4444;
+}
+
+.test-description {
+  color: #f1f5f9;
+}
+
+/* Feedback Styles */
+.feedback {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+}
+
+.feedback.success {
+  background-color: #0f172a;
+  color: #22c55e;
+  border: 1px solid #22c55e;
+}
+
+.feedback.error {
+  background-color: #0f172a;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+@media (max-width: 1024px) {
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculator-page {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .calculator {
+    max-width: 100%;
+  }
+
+  .code-editor {
+    height: 300px;
+  }
+}
+
+/* Dialog Styles */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-content {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-content h3 {
+  color: #f1f5f9;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.dialog-content p {
+  color: #94a3b8;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.5;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.dialog-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.dialog-button.cancel {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+.dialog-button.cancel:hover {
+  background: #475569;
+}
+
+.dialog-button.confirm {
+  background: #ef4444;
+  color: white;
+}
+
+.dialog-button.confirm:hover {
+  background: #dc2626;
+} 
